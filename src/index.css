@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lego-green: #059669;
+  --color-lego-yellow: #F2CD37;
+  --color-lego-red: #D12229;
+  --color-lego-blue: #0055BF;
+}
+
+@layer base {
+  .lego-baseplate {
+    background-color: var(--color-lego-green);
+    background-image: radial-gradient(rgba(0,0,0,0.15) 2px, transparent 2px);
+    background-size: 32px 32px;
+    min-height: 100vh;
+  }
+}
