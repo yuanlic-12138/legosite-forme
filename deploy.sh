@@ -15,7 +15,7 @@ fi
 
 echo "[1/6] Node.js version: $(node -v)"
 echo "[2/6] Installing dependencies..."
-npm ci --production
+npm install
 
 echo "[3/6] Building frontend..."
 npm run build
@@ -29,7 +29,7 @@ chmod -R 755 server/uploads public/data
 # Check PM2
 if ! command -v pm2 &> /dev/null; then
     echo "[INFO] PM2 not found, installing globally..."
-    npm install -g pm2
+    sudo npm install -g pm2
 fi
 
 echo "[6/6] Starting with PM2..."
@@ -39,7 +39,7 @@ pm2 save
 echo ""
 echo "========================================="
 echo "  Deploy complete!"
-echo "  Backend: http://localhost:3001"
+echo "  Site: http://localhost:3001"
 echo "  Run 'pm2 logs' to view logs"
 echo "  Run 'pm2 status' to check status"
 echo "========================================="

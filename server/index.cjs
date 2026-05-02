@@ -39,6 +39,15 @@ if (!fs.existsSync(productsFile)) {
   fs.writeFileSync(productsFile, JSON.stringify([], null, 2));
 }
 
+// 生产环境提供前端构建产物
+if (process.env.NODE_ENV === 'production') {
+  const distPath = path.join(__dirname, '..', 'dist');
+  app.use(express.static(distPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
