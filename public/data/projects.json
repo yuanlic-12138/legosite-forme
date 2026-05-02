@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "title": "乐高个人主页",
+    "description": "你正在看的这个网站！使用React + TypeScript + Tailwind CSS构建的乐高风格个人主页。",
+    "tech": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "tags": [
+      "前端",
+      "个人项目"
+    ],
+    "images": [],
+    "videos": [],
+    "links": {
+      "github": "#",
+      "live": "#"
+    },
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "1777527983046",
+    "title": "电商aigc视频-红酒杯",
+    "description": "aigc",
+    "tech": [],
+    "tags": [
+      "电商"
+    ],
+    "images": [],
+    "videos": [
+      "/uploads/videos/1777527940360-606380741.mp4"
+    ],
+    "links": {
+      "github": "",
+      "live": "",
+      "other": []
+    },
+    "createdAt": "2026-04-30T05:46:23.046Z",
+    "updatedAt": "2026-04-30T05:54:13.606Z"
+  }
+]
